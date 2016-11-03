@@ -1,0 +1,76 @@
+Copyright (c) 2016 Fondazione Bruno Kessler www.fbk.eu
+
+Authors:
+	Marino Ceccato 
+	Roberto Tiella
+	Andrea Avancini
+
+Affiliation
+	Fondazione Bruno Kessler
+
+Permission is hereby granted, free of charge, to any person obtaining a copy 
+of this software and associated documentation files (the "Software"), to 
+deal in the Software without restriction, including without limitation the 
+rights to use, copy, modify, merge, publish, distribute, sublicense, and/or 
+sell copies of the Software, and to permit persons to whom the Software is 
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in 
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
+IN THE SOFTWARE.
+
+
+
+
+This software includes third parties contribtuons with the following licenses:
+
+1) C grammar for Txl
+
+Copyright 1994-2011 James R. Cordy, Andrew J. Malton and Christopher Dahn
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+    Redistributions of source code must retain the above copyright notice, 
+    this list of conditions and the following disclaimer.
+    Redistributions in binary form must reproduce the above copyright notice,
+    this list of conditions and the following disclaimer in the documentation
+    and/or other materials provided with the distribution.
+
+    THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+    INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY
+    AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+    AUTHORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY,
+    OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+    SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+    INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+    CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+    ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+    POSSIBILITY OF SUCH DAMAGE.
+
+
+
+2) TXL interpreter and compiler
+
+Copyright 1988-2015 Queen's University at Kingston
+
+TXL 10.6 and its supporting materials are Copyright 2015 by Queen's University at Kingston (the "Copyright Holder") and James R. Cordy (the "Author") under the copyright laws of Canada and international copyright agreements with the United States and other countries signatory to the Berne Convention and/or the Universal Copyright Convention (1971 Paris text).
+
+TXL 10.6 is provided FREE OF CHARGE for the USE of individuals, companies and institutions PROVIDED that proper ACKNOWLEDGEMENT OF USE of TXL is made in all published work deriving from or depending upon such use.
+
+TXL 10.6 is provided on an AS-IS BASIS, in the hope that it may be useful, but WITHOUT ANY WARRANTY, including WITHOUT ANY IMPLIED WARRANTY AS TO ITS MERCHANTABILITY OR SUITABILITY FOR ANY PARTICULAR PURPOSE.
+
+IN NO EVENT SHALL the Copyright Holder OR the Author BE HELD LIABLE for any direct, indirect, incidental, special, exemplary, or consequential damages (INCLUDING, BUT NOT LIMITED TO, procurement of substitute goods or services; loss of use, data or profits; or business interruption) HOWEVER CAUSED in on any theory of liability, whether in contract, strict liability, or tort (INCLUDING negligence or otherwise) arising IN ANY WAY out of the use of this software, EVEN IF ADVISED of the possibility of such damage.
+
+Permission to copy and redistribute TXL 10.6 is hereby granted PROVIDED that the TXL 10.6 distribution is RETAINED UNMODIFIED IN ITS ENTIRETY including this file, and that NO CHARGE OF ANY KIND is made for such redistribution.
+
+(Rev 27.8.15)
+
+

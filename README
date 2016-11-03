@@ -1,0 +1,59 @@
+ Copyright (c) 2016 Fondazione Bruno Kessler www.fbk.eu
+ Author Mariano Ceccato
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy 
+ of this software and associated documentation files (the "Software"), to 
+ deal in the Software without restriction, including without limitation the 
+ rights to use, copy, modify, merge, publish, distribute, sublicense, and/or 
+ sell copies of the Software, and to permit persons to whom the Software is 
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in 
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
+ IN THE SOFTWARE.
+
+Note: this software makes use of TXL, usage restrictions apply. See the
+Copyright file for more information.
+
+
+1) Purpose
+
+	This program is the annotation reader. It is intended to extract ASPIRE 
+	annotations from source files, to be used in the bin2bin ACTC. 
+	
+	Annotations are stored in json format.
+
+2) Directory content
+
+	readAnnot.sh : the script to run to extract annotations
+	convert_pragmas.py : python component to do some preprocessing
+	readAnnot.x : Txl component to extract annotations
+	README : this documentation file
+
+
+3) Preconditions
+
+	The source file should be already preprocessed (gcc -E) and normalized.
+	In particular, this program expects variable definitions to contain 
+	only a single variable. 
+
+	For example this syntax is not allowed:
+		int a, b;
+	
+	They should be already normalized into:
+		int a;
+		int b;
+
+4) Usage
+	Run the program like this:
+		readAnnot.sh INPUTFILE.i OUTPUTFILE.json
+	
+	The syntax of the generated json file is explained in D5.01(b).
+
