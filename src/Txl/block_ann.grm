@@ -1,0 +1,61 @@
+% Copyright (c) 2016 Fondazione Bruno Kessler www.fbk.eu
+% Author Roberto Tiella
+
+% Permission is hereby granted, free of charge, to any person obtaining a copy 
+% of this software and associated documentation files (the "Software"), to 
+% deal in the Software without restriction, including without limitation the 
+% rights to use, copy, modify, merge, publish, distribute, sublicense, and/or 
+% sell copies of the Software, and to permit persons to whom the Software is 
+% furnished to do so, subject to the following conditions:
+
+% The above copyright notice and this permission notice shall be included in 
+% all copies or substantial portions of the Software.
+
+% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
+% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+% FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
+% IN THE SOFTWARE.
+
+
+
+% redefine function_definition_or_declaration
+% 	[aspire_pragma] | ...
+% end redefine
+
+redefine declaration_or_statement
+ 	[aspire_block] | ...
+end redefine
+
+define aspire_pragma
+	[aspire_pragma_begin] | [aspire_pragma_end]
+end define
+
+define stringlit_or_protection_annotation
+ 	[stringlit] | [protection_annotation]
+end define
+
+define aspire_pragma_begin
+	'_ASPIRE_BLOCK_BEGIN '( [stringlit_or_protection_annotation] ') % [NL]
+end define
+
+define aspire_pragma_end
+	'_ASPIRE_BLOCK_END '( ') % [NL]
+end define
+
+% redefine structured_statement
+%         [aspire_block_statement] | ...
+% end redefine
+
+define aspire_block_status
+	'@ 'DONE '@
+end define
+
+define aspire_block
+	[aspire_pragma_begin][attr aspire_block_status]
+		[repeat declaration_or_statement]
+	[aspire_pragma_end]
+end define
+
